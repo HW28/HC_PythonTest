@@ -8,6 +8,7 @@ import requests
 from io import BytesIO
 import pandas as pd
 
+
 def twitter_api():
     access_token = 'Access - Token'
     access_token_secret = 'Access - Token -Secret'
