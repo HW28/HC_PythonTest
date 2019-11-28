@@ -9,10 +9,10 @@ from io import BytesIO
 import pandas as pd
 
 def twitter_api():
-    access_token = '798604900057878528-JVV0uCxEbP5FBgLlMZ3Wa1WdX4kABFL'
-    access_token_secret = '3UHK7lRvZ8xoo1ApnLFGUAvYSONy3FYVlrOkQJplnIQjP'
-    consumer_key = 'STQiEklRQsWNQ55hL61LCpMzR'
-    consumer_secret = '1B8K7VdNZwyxZQlwqum6524pafQ1b6hr7IdF7aLvhkktDmnOiG'
+    access_token = 'Access - Token'
+    access_token_secret = 'Access - Token -Secret'
+    consumer_key = 'Consumer -Key'
+    consumer_secret = 'Consumer - Secret - Key'
 
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
