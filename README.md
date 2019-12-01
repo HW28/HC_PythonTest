@@ -6,7 +6,15 @@
 1 - Add the excel file with the data at folder "HC_PythonTest/PythonDevelopExercise/src/in/" <br/>
 2 - Set de Twitter API Keys at function twitter_api of "HC_PythonTest/PythonDevelopExercise/src/functions.py" <br/>
 3 - Execute in a terminal the script "main.py" ( Terminal command - python main.py) 4 - In case we want to store the output <br/>("HC_PythonTest/PythonDevelopExercise/src/out/" ) , execute - python main.py > out/$Name_of_file<br/>
-
+4 - Unit Test changes before execute:<br/>
+    4.1 - Modify the screen name of the test for the owner of the input Twitter API keys: <br/>
+          a) test_tweetwoimage (line 23)<br/>
+          b) test_tweetimage_text (line 36)<br/>
+    4.2 - Modify the number of tweets at test_obtain_excel_data by the number of input data at the excel input file<br/>
+    4.3 - Modify the Tweets Text Message at  the functions:
+          a) test_tweetwoimage (line 20)<br/>
+          b) test_tweetimage_text (line 31)<br/>
+5 - Execute in a terminal the script "unit_tests.py" (Terminal command -python -m unittest unit_tests.py)<br/>
 ## Results:<br/>
 
 ### Part 1<br/>
