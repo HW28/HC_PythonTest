@@ -41,19 +41,6 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(last_tweet_image, media)
 
     def test_obtain_excel_data(self):
-        text = "Test with image tweet"
-        url = 'https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg'
-        media = 'photo'
-
-        tweet_image(url, text, 0)
-        tweet = twitter_api().user_timeline(screen_name='swh_28', count=1)[0]
-        json_str = json.dumps(tweet._json)
-        resp_dict = json.loads(json_str)
-        last_tweet_image = (resp_dict['entities']['media'][0]['type'])
-
-        self.assertEqual(last_tweet_image, media)
-
-    def test_obtain_excel_data(self):
         number_of_tweets = 14
         data_folder = Path("in/")
         file_to_open = data_folder / "Python_exercise1.xlsx"
